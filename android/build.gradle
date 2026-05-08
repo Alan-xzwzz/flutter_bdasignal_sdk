@@ -1,0 +1,56 @@
+group 'site.xzwzz.bdasignalsdk'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = "1.8.22"
+    repositories {
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        google()
+    }
+
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.1.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://artifact.bytedance.com/repository/Volcengine/' }
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace 'site.xzwzz.bdasignalsdk'
+
+    compileSdkVersion 36
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+
+    defaultConfig {
+        minSdkVersion 24
+    }
+
+}
+
+dependencies {
+    implementation 'com.bytedance.ads:AppConvert:2.0.4'
+}
