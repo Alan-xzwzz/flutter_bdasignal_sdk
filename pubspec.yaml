@@ -39,6 +39,8 @@ flutter:
         pluginClass: BdasignalsdkPlugin
       ios:
         pluginClass: BdasignalsdkPlugin
+      ohos:
+        pluginClass: BdasignalsdkPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

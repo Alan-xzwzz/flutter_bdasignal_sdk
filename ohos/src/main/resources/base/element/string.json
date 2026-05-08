@@ -1,0 +1,8 @@
+{
+  "string": [
+    {
+      "name": "app_tracking_consent_reason",
+      "value": "用于请求应用跟踪授权，以提升归因准确性。"
+    }
+  ]
+}

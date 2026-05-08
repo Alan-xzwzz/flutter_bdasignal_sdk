@@ -1,0 +1,12 @@
+{
+  "name": "flutter_bdasignalsdk",
+  "version": "1.0.0",
+  "description": "ByteDance signal Flutter plugin HarmonyOS module.",
+  "author": "xzwzz",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@bytedance_ads/app_convert": "^0.0.2"
+  },
+  "devDependencies": {},
+  "dynamicDependencies": {}
+}

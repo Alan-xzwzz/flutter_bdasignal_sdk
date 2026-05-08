@@ -1,0 +1,17 @@
+{
+  module: {
+    name: "flutter_bdasignalsdk",
+    type: "har",
+    deviceTypes: ["default", "tablet"],
+    requestPermissions: [
+      {
+        name: "ohos.permission.APP_TRACKING_CONSENT",
+        reason: "$string:app_tracking_consent_reason",
+        usedScene: {
+          abilities: ["EntryAbility"],
+          when: "inuse",
+        },
+      },
+    ],
+  },
+}

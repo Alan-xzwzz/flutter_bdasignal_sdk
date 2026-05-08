@@ -35,6 +35,7 @@ abstract class BdasignalsdkPlatform extends PlatformInterface {
     bool enableLog = false,
     bool playSessionEnable = true,
     bool enableOAID = true,
+    String? customOaid,
     bool enableLifecycleCallback = false,
   }) {
     throw UnimplementedError('initialize() has not been implemented.');

@@ -49,6 +49,7 @@ class MethodChannelBdasignalsdk extends BdasignalsdkPlatform {
     bool enableLog = false,
     bool playSessionEnable = true,
     bool enableOAID = true,
+    String? customOaid,
     bool enableLifecycleCallback = false,
   }) async {
     await methodChannel.invokeMethod<void>('initialize', {
@@ -59,6 +60,7 @@ class MethodChannelBdasignalsdk extends BdasignalsdkPlatform {
       'enableLog': enableLog,
       'playSessionEnable': playSessionEnable,
       'enableOAID': enableOAID,
+      'customOaid': customOaid,
       'enableLifecycleCallback': enableLifecycleCallback,
     });
   }

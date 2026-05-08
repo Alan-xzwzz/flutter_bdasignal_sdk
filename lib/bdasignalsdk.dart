@@ -18,6 +18,8 @@ class Bdasignalsdk {
     bool enableLog = false,
     bool playSessionEnable = true,
     bool enableOAID = true,
+    // 仅 OHOS 生效：自定义 OAID 提供值，配置后 SDK 将使用该值。
+    String? customOaid,
     // 仅 Android 生效：透传 BDConvertLifecycleCallback 到 Flutter。
     bool enableLifecycleCallback = false,
   }) {
@@ -29,6 +31,7 @@ class Bdasignalsdk {
       enableLog: enableLog,
       playSessionEnable: playSessionEnable,
       enableOAID: enableOAID,
+      customOaid: customOaid,
       enableLifecycleCallback: enableLifecycleCallback,
     );
   }
