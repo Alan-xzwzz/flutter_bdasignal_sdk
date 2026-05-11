@@ -1,0 +1,1 @@
+-keep class com.bytedance.ads.convert.broadcast.common.EncryptionTools { *; }
